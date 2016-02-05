@@ -7,8 +7,13 @@ use Prophecy\Argument;
 
 class ItemPriceSpec extends ObjectBehavior
 {
-    function it_is_initializable()
+    function let()
     {
-        $this->shouldHaveType('SamBurns\SupermarketCodeKata\ItemPrice');
+        $this->beConstructedWith(2.99);
+    }
+
+    function it_can_return_its_price_as_a_float()
+    {
+        $this->toFloat()->shouldBe(2.99);
     }
 }
