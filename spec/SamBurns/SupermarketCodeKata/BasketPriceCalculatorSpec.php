@@ -32,11 +32,10 @@ class BasketPriceCalculatorSpec extends ObjectBehavior
     {
         // Add various items
         $this->addItem(new Crisps());
-        $this->addItem(new Crisps());
         $this->addItem(new Drink());
 
         // Test total price
-        $this->getTotalPrice()->shouldBe(1.99);
+        $this->getTotalPrice()->shouldBe(1.49);
     }
 
     function it_knows_about_the_meal_deal()
