@@ -1,5 +1,4 @@
 <?php
-
 namespace spec\SamBurns\SupermarketCodeKata;
 
 use PhpSpec\ObjectBehavior;
