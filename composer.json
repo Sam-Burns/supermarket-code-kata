@@ -7,7 +7,9 @@
     },
 
     "require-dev": {
-        "phpspec/phpspec": "~2.4.1"
+        "phpspec/phpspec":  "~2.4.1",
+        "phpspec/prophecy": "dev-master#e55e3e32a870bd4f05425fa4f717b52bd40e5659"
+
     },
 
     "autoload": {

@@ -3,7 +3,7 @@ namespace SamBurns\SupermarketCodeKata;
 
 class BasketPriceCalculator
 {
-    public function addItemsAtPrice(int $noOfItems, ItemPrice $itemPrice)
+    public function addItem(ItemInterface $item)
     {
         // TODO: write logic here
     }
@@ -11,6 +11,6 @@ class BasketPriceCalculator
     public function getTotalPrice() : float
     {
         // TODO: write logic here
-        return 5.98;
+        return 0.50;
     }
 }
