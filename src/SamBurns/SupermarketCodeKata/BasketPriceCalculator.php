@@ -32,5 +32,6 @@ class BasketPriceCalculator
     public function getTotalPrice() : float
     {
         /** @todo Implement this! */
+        return 0.00;
     }
 }
