@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ./vendor/bin/phpspec r;
 EXIT_CODE=$?;
 
