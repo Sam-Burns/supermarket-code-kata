@@ -50,6 +50,22 @@ class BasketPriceCalculatorSpec extends ObjectBehavior
         $this->getTotalPrice()->shouldBe(3.00);
     }
 
+    function it_can_handle_multiple_meal_deals()
+    {
+        // Add meal deal
+        $this->addItem(new Sandwich());
+        $this->addItem(new Crisps());
+        $this->addItem(new Drink());
+
+        // Add another meal deal
+        $this->addItem(new Sandwich());
+        $this->addItem(new Crisps());
+        $this->addItem(new Drink());
+
+        // Test total price
+        $this->getTotalPrice()->shouldBe(6.00);
+    }
+
     function it_can_calculate_prices_for_a_meal_deal_and_extra_stuff()
     {
         // Add meal deal
