@@ -6,3 +6,6 @@ classes, and the special meal deal rule.
 
 Implement the class `BasketPriceCalculator` to return the correct values.  The PHPSpec tests provided should pass when
 you have done this correctly.
+
+The tests can be run with `./tests.sh`.  If that gets annoying, `./vendor/bin/phpspec run` will achieve much the same
+thing, without audio prompts.
