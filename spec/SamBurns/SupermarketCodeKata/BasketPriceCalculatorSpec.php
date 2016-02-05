@@ -14,11 +14,6 @@ use SamBurns\SupermarketCodeKata\Item\Sandwich;
  */
 class BasketPriceCalculatorSpec extends ObjectBehavior
 {
-    function it_is_initializable()
-    {
-        $this->shouldHaveType('SamBurns\SupermarketCodeKata\BasketPriceCalculator');
-    }
-
     function it_can_calculate_the_price_of_a_single_item()
     {
         // Add a single item
