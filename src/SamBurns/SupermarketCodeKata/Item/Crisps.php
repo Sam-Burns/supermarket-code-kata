@@ -5,7 +5,7 @@ use SamBurns\SupermarketCodeKata\ItemInterface;
 
 class Crisps implements ItemInterface
 {
-    public function getUnitCost() : float
+    public function getUnitCost()
     {
         return 0.50;
     }

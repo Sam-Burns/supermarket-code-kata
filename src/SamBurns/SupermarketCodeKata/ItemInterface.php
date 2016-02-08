@@ -3,5 +3,5 @@ namespace SamBurns\SupermarketCodeKata;
 
 interface ItemInterface
 {
-    public function getUnitCost() : float;
+    public function getUnitCost();
 }
