@@ -5,14 +5,14 @@ use PhpSpec\ObjectBehavior;
 use PhpSpec\Wrapper\Subject;
 use Prophecy\Argument;
 use SamBurns\SupermarketCodeKata\Item\Crisps;
-use SamBurns\SupermarketCodeKata\BasketPriceCalculator;
+use SamBurns\SupermarketCodeKata\Basket;
 use SamBurns\SupermarketCodeKata\Item\Drink;
 use SamBurns\SupermarketCodeKata\Item\Sandwich;
 
 /**
- * @mixin BasketPriceCalculator
+ * @mixin Basket
  */
-class BasketPriceCalculatorSpec extends ObjectBehavior
+class BasketSpec extends ObjectBehavior
 {
     function it_can_calculate_the_price_of_a_single_item()
     {
