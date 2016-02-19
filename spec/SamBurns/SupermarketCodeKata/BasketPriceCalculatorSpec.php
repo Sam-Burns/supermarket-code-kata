@@ -8,6 +8,7 @@ use SamBurns\SupermarketCodeKata\Item\Crisps;
 use SamBurns\SupermarketCodeKata\BasketPriceCalculator;
 use SamBurns\SupermarketCodeKata\Item\Drink;
 use SamBurns\SupermarketCodeKata\Item\Sandwich;
+use SamBurns\SupermarketCodeKata\ItemInterface;
 
 /**
  * @mixin BasketPriceCalculator
@@ -72,5 +73,16 @@ class BasketPriceCalculatorSpec extends ObjectBehavior
 
         // Test total price
         $this->getTotalPrice()->shouldBe(3.99);
+    }
+
+    function it_can_calculate_oddly_priced_items()
+    {
+        $this->addItem(new class () extends Crisps {
+            public function getUnitCost():float {
+                return 0.65;
+            }
+        });
+
+        $this->getTotalPrice()->shouldBe(.65);
     }
 }
