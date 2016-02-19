@@ -73,4 +73,15 @@ class BasketPriceCalculatorSpec extends ObjectBehavior
         // Test total price
         $this->getTotalPrice()->shouldBe(3.99);
     }
+
+    function it_can_calculate_oddly_priced_items()
+    {
+        $this->addItem(new class () extends Crisps {
+            public function getUnitCost(): float {
+                return 0.65;
+            }
+        });
+
+        $this->getTotalPrice()->shouldBe(.65);
+    }
 }
